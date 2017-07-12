@@ -1,0 +1,18 @@
+.room-bar{
+     font-family: 'Monda', sans-serif;
+     height: 100%;
+     box-shadow: 10px 5px 5px black;
+     background-color: grey;
+     width: 300px;
+     padding-top: 10px;
+     padding-left: 20px;
+     margin-bottom: 20px;
+     float: left;
+}
+
+.room-list{
+    margin-top: 20px;
+    padding-left: 30px;
+}
+
+

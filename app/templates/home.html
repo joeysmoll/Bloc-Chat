@@ -1,1 +1,8 @@
- <h1>Home Page</h1>
+ <section class="room-bar">
+    <h1 class="bloc-chat-title" >Bloc Chat</h1>
+
+    <div class="room-list" ng-repeat="allRooms in home.allRooms track by $index">
+        <span class="room-item">{{ allRooms.$id.toUpperCase() }}</span>
+    
+    </div>
+ </section>
