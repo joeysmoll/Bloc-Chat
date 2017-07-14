@@ -1,8 +1,10 @@
  <section class="room-bar">
     <h1 class="bloc-chat-title" >Bloc Chat</h1>
+    <button type="button" class="add-room-button" ng-click="home.openModal()">Add Room</button>
+    
 
     <div class="room-list" ng-repeat="allRooms in home.allRooms track by $index">
-        <span class="room-item">{{ allRooms.$id.toUpperCase() }}</span>
+        <span class="room-item">{{ allRooms.$value.toUpperCase() }}</span>
     
     </div>
  </section>

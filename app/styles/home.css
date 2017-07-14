@@ -1,3 +1,15 @@
+
+.bloc-chat-title{
+    display: inline;
+}
+
+.add-room-button {
+    font-family: 'Monda', sans-serif;
+    margin: 10px;
+    float: right;
+    clear: both;
+    
+}
 .room-bar{
      font-family: 'Monda', sans-serif;
      height: 100%;
@@ -15,4 +27,29 @@
     padding-left: 30px;
 }
 
+.modal-box {
+   font-family: 'Monda', sans-serif;
+   width: 300px;
+   height: 150px;
+   position: absolute;
+    box-shadow: 10px 5px 5px black;
+    background-color: lightgrey;
+   left: 50%;
+   top: 50%; 
+   margin-left: -150px;
+   margin-top: -150px;
+   text-align: center;
+}
 
+.modal-body{
+   font-family: 'Monda', sans-serif;
+   margin-bottom: 10px;
+}
+
+.submitButton{
+    font-family: 'Monda', sans-serif;
+}
+
+.cancelButton{
+    font-family: 'Monda', sans-serif;
+}
