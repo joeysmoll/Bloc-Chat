@@ -1,10 +1,23 @@
  <section class="room-bar">
-    <h1 class="bloc-chat-title" >Bloc Chat</h1>
+    <h2 class="bloc-chat-title">Bloc Chat</h2>
     <button type="button" class="add-room-button" ng-click="home.openModal()">Add Room</button>
     
+    
 
-    <div class="room-list" ng-repeat="allRooms in home.allRooms track by $index">
-        <span class="room-item">{{ allRooms.$value.toUpperCase() }}</span>
+    <div class="room-list"  ng-repeat="room in home.allRooms track by $index">
+       
+        <span class="room-item" ng-click="home.selectRoom(room)" >{{ room.$value.toUpperCase() }}</span>
     
     </div>
+ </section>
+
+ <section class="content-container">
+     <h2 class="content-title"ng-show="selectedRoom === $index">{{home.selected.$value.toUpperCase()}}</h2>
+     <div class="message-list"ng-repeat="message in home.selectedMessages">
+        <span class="message-username message-row">{{ message.username }}</span>
+        <span class="message-content message-row">{{ message.content }}</span>
+        <span class="message-time">{{ message.sentAt }}</span>
+
+     </div>
+     <div ng-hide="home.selectedMessages.length !== 0">This chat room has no messages.</div>
  </section>

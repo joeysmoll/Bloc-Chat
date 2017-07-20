@@ -1,17 +1,22 @@
 
+.content-container{
+    padding-left:400px;
+}
+
 .bloc-chat-title{
+    text-transform: uppercase;
     display: inline;
 }
 
 .add-room-button {
-    font-family: 'Monda', sans-serif;
     margin: 10px;
     float: right;
     clear: both;
+    cursor: pointer;
     
 }
 .room-bar{
-     font-family: 'Monda', sans-serif;
+
      height: 100%;
      box-shadow: 10px 5px 5px black;
      background-color: grey;
@@ -22,13 +27,18 @@
      float: left;
 }
 
+
+
 .room-list{
     margin-top: 20px;
     padding-left: 30px;
 }
 
+.room-item{
+    cursor: pointer;
+}
+
 .modal-box {
-   font-family: 'Monda', sans-serif;
    width: 300px;
    height: 150px;
    position: absolute;
@@ -42,14 +52,27 @@
 }
 
 .modal-body{
-   font-family: 'Monda', sans-serif;
    margin-bottom: 10px;
 }
 
 .submitButton{
-    font-family: 'Monda', sans-serif;
 }
 
 .cancelButton{
-    font-family: 'Monda', sans-serif;
+}
+
+.message-list{
+    margin-bottom: 20px;
+}
+
+.message-username{
+    font-weight: bold;
+    display: block;
+}
+
+.message-time{
+    font-style: italic; 
+    float: right;
+    clear: right;
+    padding-right: 30px;
 }
