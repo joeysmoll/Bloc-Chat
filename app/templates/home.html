@@ -12,7 +12,7 @@
  </section>
 
  <section class="content-container">
-     <h2 class="content-title"ng-show="selectedRoom === $index">{{home.selected.$value.toUpperCase()}}</h2>
+     <h2 class="content-title"ng-show="selectedRoom === $index">{{home.selectedRoom.$value.toUpperCase()}}</h2>
      <div class="message-list"ng-repeat="message in home.selectedMessages">
         <span class="message-username message-row">{{ message.username }}</span>
         <span class="message-content message-row">{{ message.content }}</span>
