@@ -2,6 +2,8 @@
     padding-left: 400px;
 }
 
+.button {}
+
 .bloc-chat-title {
     text-transform: uppercase;
     display: inline;
@@ -16,7 +18,7 @@
 
 .room-bar {
     height: 100%;
-    box-shadow: 10px 5px 5px black;
+    box-shadow: 9px 5px 5px black;
     background-color: grey;
     width: 300px;
     padding-top: 10px;
@@ -60,13 +62,30 @@
     text-align: center;
 }
 
+.message-box {
+    float: right;
+    position: fixed;
+    box-sizing: border-box;
+    bottom: 0px;
+    height: 40px;
+    width: calc(100% - 400px);
+    font-size: 20px;
+}
+
+.send-button {
+    display: inline;
+    position: fixed;
+    clear: both;
+    cursor: pointer;
+    left: 330px;
+    bottom: 0px;
+    height: 40px;
+    font-size: 20px;
+}
+
 .modal-body {
     margin-bottom: 10px;
 }
-
-.submitButton {}
-
-.cancelButton {}
 
 .message-list {
     margin-bottom: 20px;
