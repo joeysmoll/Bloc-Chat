@@ -5,7 +5,6 @@
             currentUser = this.newUsername;
             $cookies.put('blocChatCurrentUser', currentUser);
             $uibModalInstance.close();
-            console.log(currentUser);
         };
     }
 

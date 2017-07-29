@@ -16,9 +16,7 @@
 
         this.selectRoom = function(room) {
             this.selectedRoom = room;
-            console.log(this.selectedRoom);
             this.selectedMessages = Message.getByRoomId(room.$id);
-            console.log(this.selectedMessages);
         };
 
     }

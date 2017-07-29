@@ -22,7 +22,6 @@
             newMessage.sentAt = formatHours + ':' + minutes + tod;
             Message.send(newMessage);
             this.userMessage = '';
-            console.log(newMessage);
         };
     }
 
